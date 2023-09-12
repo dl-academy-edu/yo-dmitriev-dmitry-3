@@ -1,0 +1,31 @@
+.header {
+    // display: flex;
+    @include Gilroy;
+    font-size: 18px;
+    align-items: center;
+    margin-top: 33px;
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        border-bottom: 1px solid #828282;
+        padding: 33px 0;
+        &:not(first-child):not(last-child) {
+            column-gap: 20.5px;
+        }
+    }
+    &__nav-item1 {
+        list-style-type: none;
+        margin-right: 689px;
+        color: #070707;
+        font-weight: 700;
+    }
+    &__nav-item {
+        list-style-type: none;
+
+        font-weight: 400;
+    }
+    &__nav-link {
+        text-decoration: none;
+    }
+}
