@@ -2,9 +2,69 @@
   Код ниже нужно удалить, он добавлен просто для примера
 */
 .footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
+  @include Gilroy;
   text-align: center;
-  height: 100px;
+  color: var(--Black, #070707);
+  display: flex;
+  padding: 60px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  &__title {
+    margin-top: 60px;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  &__message {
+    margin-top: 20px;
+    max-width: 330px;
+    &-text {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+    &-btn {
+      display: inline-flex;
+      margin-top: 30px;
+      padding: 10px 29px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 30px;
+      background: var(--Black, #070707);
+    }
+    &-send {
+      color: var(--White, #FFF);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+  &__messenger {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    gap: 10px;
+    justify-content: center;
+    &-btn {
+      display: inline-flex;
+      padding: 10px 19px;
+      align-items: center;
+      row-gap: 10px;
+      border-radius: 30px;
+      border: 2.5px solid var(--Black, #070707);
+    }
+  }
+  &__author {
+    color: var(--Gray, #828282);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
 }
