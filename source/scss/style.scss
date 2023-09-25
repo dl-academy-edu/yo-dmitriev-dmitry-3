@@ -1,0 +1,229 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+@import "_fonts";
+
+/*
+  Import all other blocks
+*/
+@import "_blocks/container";
+@import "_blocks/footer";
+@import "_blocks/header";
+@import "_blocks/breadcrumb__item.scss";
+
+.name {
+  @include Gilroy;
+  display: flex;
+  text-align: start;
+  margin-top: 40px;
+  &__dmitriy {
+    color: #070707;
+    font-size: 47px;
+    font-weight: 400;
+    margin: 0 40px 36px 0;
+    max-width: 180px;
+    &-year {
+      color: #070707;
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 63px;
+      max-width: 226px;
+
+    }
+  }
+}
+
+.slider {
+  text-align: center;
+  // margin-bottom: 30px;
+  &__foto-img {
+    width: 1000px;
+    height: 465px;
+    flex-shrink: 0;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 26px;
+  align-items: center;
+  column-gap: 428px;
+  margin-bottom: 57px;
+}
+
+.dialogue {
+  background: var(--Wild-Sand, #F6F6F6);  
+  width: 1440px;
+  height: 618px;
+  padding: 60px 431px 62px 431px;
+  margin-left: -220px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__block {
+    @include Gilroy;
+    display: flex;
+    color: var(--Black, #070707);
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__hairpins {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 31px;
+    &-one {
+      position: relative;
+      margin-left: -100px;
+      margin-bottom: -10px;
+    }
+    &-two {
+      position: relative;
+      margin-left: 100px;
+      margin-bottom: -10px;
+    }
+    &-text {
+      position: absolute;
+      width: 448px;
+      height: 85px;
+      text-align: start;
+      margin-left: -465px;
+      margin-top: 16px;
+    }
+    &-text-right {
+      position: absolute;
+      width: 448px;
+      height: 85px;
+      text-align: start;
+      margin-left: -224px;
+      margin-top: -105px;
+    }
+  }
+}
+.programs {
+  @include Gilroy;
+  display: block;
+  align-items: center;
+  color: var(--Black, #070707);
+  text-align: center;
+  padding: 60px 0;
+  &__skills {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 21px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  &__works {
+    display: flex;
+    list-style-type: none;
+    column-gap: 25px;
+    text-align: center;
+    &-item {
+      display: block;
+      flex-shrink: 0;
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 18px;
+      margin-bottom: 24px;
+      color: var(--Black, #828282);
+    }
+    &-percent {
+      display: flex;
+      text-align: center;
+      align-items: center;
+    }
+    &-85 {
+      color: var(--Gray, #828282);
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 12px;
+    }
+    &-5 {
+      color: var(--Gray, #828282);
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 19px;
+    }
+    &-15 {
+      color: var(--Gray, #828282);
+      font-size: 14px;;
+      font-weight: 700;
+      margin-right: 14px;
+    }
+    &-80 {
+      color: var(--Gray, #828282);
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+    &-band {
+      width: 142px;
+      height: 9px;
+    }
+  }
+}
+.portfolio {
+  width: 1440px;
+  height: 816px;
+  margin-left: -220px;
+  flex-shrink: 0;
+  padding: 60px 220px;
+  background: var(--Wild-Sand, #F6F6F6);
+  text-align: center;
+  &__text {
+    color: var(--Black, #070707);
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  &__block {
+    @include Gilroy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    &-description {
+      position: absolute;
+      width: 1000px;
+      height: 150px;
+      flex-shrink: 0;
+      background: var(--black-opacity, rgba(7, 7, 7, 0.85));
+      margin-top: 454px;
+      justify-content: space-around;
+      text-align: center;
+      align-items: center;
+      padding: 31px 300px;
+    }
+    &-leaming {
+      color: var(--White, #FFF);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: underline dashed;
+    }
+    &-text {
+      color: var(--White, #FFF);
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 18px;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>My blog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+
+        <section class="name" >
+            <h1 class="name__dmitriy" >Dmitriy Dmitriev</h1>
+            <p class="name__year" >Future front-end developer 43 years old, Tolyatti</p>
+        </section>
+
+        <section class="slider">
+            <a class="slider__foto"  href="#">
+                <img class="slider__foto-img"  src="./img/myfoto.jpg" alt="MyFoto">
+            </a>
+        </section>
+
+        <ul class="breadcrumb container" style="list-style-type:none">
+            @@include('blocks/breadcrumb__item.html')
+        </ul>
+        <div class="dialogue" >
+            <div class="dialogue__block">
+                <h2 class="dialogue__hairpins" >About me</h2>
+                <div class="dialogue__hairpins-one">
+                    <svg class="dialogue__hairpins-svg" xmlns="http://www.w3.org/2000/svg" width="482" height="139" viewBox="0 0 482 139" fill="none">
+                        <path d="M480 2H2V117H416L436 137L456 117H480V2Z" stroke="#070707" stroke-width="2.5"/>
+                    </svg>
+                    <text class="dialogue__hairpins-text">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</text>
+                </div>
+                <div class="dialogue__hairpins-two">
+                    <svg class="dialogue__hairpins-svg" xmlns="http://www.w3.org/2000/svg" width="482" height="118" viewBox="0 0 482 118" fill="none">
+                        <path d="M480 1.99963H2V95.9996H26L46 116L66 95.9996H480V1.99963Z" stroke="#070707" stroke-width="2.5"/>
+                    </svg>
+                    <text class="dialogue__hairpins-text-right">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</text>
+                </div>
+                <div class="dialogue__hairpins-one">
+                    <svg class="dialogue__hairpins-svg" xmlns="http://www.w3.org/2000/svg" width="482" height="118" viewBox="0 0 482 118" fill="none">
+                        <path d="M480 2H2V96H416L436 116L456 96H480V2Z" stroke="#070707" stroke-width="2.5"/>
+                    </svg>                
+                    <text class="dialogue__hairpins-text">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </text>
+                </div>
+            </div>
+        </div>
+        <div class="programs">
+            <h2 class="programs__skills">Skills</h2>
+            <p class="programs__text">I work in such programs as</p>
+            <ul class="programs__works container" >
+                <li class="programs__works-item">
+                    <img class="programs__works-img" src="./img/html5.jpg" alt="HTML 5">
+                    <p class="programs__works-text">HTML 5</p>
+                    <div class="programs__works-percent">
+                        <p class="programs__works-85"> 85%</p>
+                        <img class="programs__works-band" src="./img/85.jpg" alt="85">
+                    </div>
+                </li>
+                <li class="programs__works-item">
+                    <img class="programs__works-img" src="./img/scss.jpg" alt="SCSS">
+                    <p class="programs__works-text">CSS/SCSS</p>
+                    <div class="programs__works-percent">
+                        <p class="programs__works-85"> 55%</p>
+                        <img class="programs__works-band" src="./img/55.jpg" alt="55">
+                    </div>
+                </li>
+                <li class="programs__works-item">
+                    <img class="programs__works-img" src="./img/js.jpg" alt="JavaScript">
+                    <p class="programs__works-text">JavaScript</p>
+                    <div class="programs__works-percent">
+                        <p class="programs__works-5"> 5%</p>
+                        <img class="programs__works-band" src="./img/15.jpg" alt="5">
+                    </div>
+                </li>
+                <li class="programs__works-item">
+                    <img class="programs__works-img" src="./img/github.jpg" alt="Git/GitHub">
+                    <p class="programs__works-text">Git/GitHub</p>
+                    <div class="programs__works-percent">
+                        <p class="programs__works-15"> 15%</p>
+                        <img class="programs__works-band" src="./img/5.jpg" alt="15">
+                    </div>
+                </li>
+                <li class="programs__works-item">
+                    <img class="programs__works-img" src="./img/figma.jpg" alt="Figma">
+                    <p class="programs__works-text">HTML 5</p>
+                    <div class="programs__works-percent">
+                        <p class="programs__works-80"> 80%</p>
+                        <img class="programs__works-band" src="./img/80.jpg" alt="80">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="portfolio">
+            <h2 class="portfolio__text">Portfolio</h2>
+            <div class="portfolio__block">
+                <img class="portfolio__block-img" src="./img/DLK.jpg" alt="DLK">
+                <div class="portfolio__block-description">
+                    <p class="portfolio__block-leaming" >Learning site for DL Academy courses</p>
+                    <p class="portfolio__block-text" >A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Contacts</h2>
+            <p>Want to know more or just chat? You are welcome!</p>
+            <button>
+                <a href="#">Send message</a>
+            </button>
+            <div>
+                <button>
+                    <a href="#">Instagram</a>
+                </button>
+                <button>
+                    <a href="#">Vk</a>
+                </button>
+                <button>
+                    <a href="#">Telegram</a>
+                </button>
+                <button>
+                    <a href="#">Mail</a>
+                </button>
+                <button>
+                    <a href="#">GitHub</a>
+                </button>
+                <button>
+                    <a href="#">Phone</a>
+                </button>
+            </div>
+            <p>Design by DL Academy</p>
+            <p>Program code from Dmitriy</p>
+        </div>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
