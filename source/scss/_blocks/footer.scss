@@ -59,6 +59,14 @@
       border-radius: 30px;
       border: 2.5px solid var(--Black, #070707);
     }
+    &-title {
+      color: var(--Black, #070707);
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
   &__author {
     color: var(--Gray, #828282);

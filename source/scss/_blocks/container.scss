@@ -2,4 +2,7 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 0px;
+  @media screen and (max-width: 768px) {
+    max-width: 648px;
+  }
 }

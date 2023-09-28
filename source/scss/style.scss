@@ -49,6 +49,35 @@
     height: 465px;
     flex-shrink: 0;
   }
+  &__foto-img748 {
+    display: none;
+  }
+  &__foto-img320 {
+    display: none;
+  }
+  @media (min-width:320px) and (max-width: 768px) {
+    .slider__foto-img {
+      display: none;
+    }
+    .slider__foto-img768 {
+      width: 648px;
+    }
+    .slider__foto-img330 {
+      display: none;
+    }
+  }
+  @media (min-width:1px) and (max-width: 320px) {
+    .slider__foto-img {
+      display: none;
+    }
+    .slider__foto-img768 {
+      display: none;
+    }
+    .slider__foto-img320 {
+      display: 320px;
+    }
+  }
+
 }
 
 .breadcrumb {
