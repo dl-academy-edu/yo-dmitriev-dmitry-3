@@ -12,6 +12,9 @@
   align-items: center;
   gap: 20px;
   flex-shrink: 0;
+  @media screen and (max-width: 320px) {
+    padding: 40px 0px;
+  }
   &__title {
     margin-top: 60px;
     font-size: 34px;

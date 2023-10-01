@@ -4,6 +4,11 @@
     font-size: 18px;
     align-items: center;
     margin-top: 33px;
+    &__nav {
+        @media screen and (max-width: 320px) {
+            display: none;
+        }
+    }
     &__nav-list {
         display: flex;
         justify-content: space-between;
