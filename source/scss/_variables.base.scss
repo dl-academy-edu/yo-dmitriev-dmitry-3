@@ -1,0 +1,30 @@
+/*
+  System font stack used as base sans-serif and monospace
+  https://css-tricks.com/snippets/css/system-font-stack/
+*/
+$font-serif-family:
+  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-mono-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+/*
+  Themes fonts
+*/
+$font-base-family: $font-serif-family;
+
+/*
+* Breakpoints
+*/
+
+$media-tablet: 768px;
+$media-tablet-landscape: 1024px;
+$media-desktop: 1200px;
+
+/*
+* Colors
+*/
+
+$color-bg: #fff;
+$color-text: #151515;
+
+$Gilroy: 'Gilroy', sans-serif;
