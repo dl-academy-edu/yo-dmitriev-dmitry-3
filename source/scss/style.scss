@@ -12,6 +12,7 @@
 @import "_utils";
 @import "_base";
 @import "_fonts";
+@import "myblog";
 
 /*
   Import all other blocks
@@ -19,7 +20,9 @@
 @import "_blocks/container";
 @import "_blocks/footer";
 @import "_blocks/header";
-@import "_blocks/breadcrumb__item.scss";
+
+@import "_blocks/breadcrumb__item";
+
 
 .name {
   @include Gilroy;

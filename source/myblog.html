@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <h1 class="title">My blog</h1>
+        <div class="filter">
+            <div class="filter__tags">
+                <p class="filter__title">Tags</p>
+                <fieldset class="filter__tags-color">
+                    <input class="filter__tags-color-input" type="checkbox" id="Black">
+                    <label class="filter__tags-color-label filter__font" for="Black"></label>
+                    <input class="filter__tags-color-input" type="checkbox" id="Blue">
+                    <label class="filter__tags-color-label filter__font" for="Blue"></label>
+
+                    <input class="filter__tags-color-input" type="checkbox" id="Green">
+                    <label class="filter__tags-color-label filter__font" for="Green"></label>
+    
+                    <input class="filter__tags-color-input" type="checkbox" id="White">
+                    <label class="filter__tags-color-label filter__font" for="White"></label>
+
+                    <input class="filter__tags-color-input" type="checkbox" id="Black">
+                    <label class="filter__tags-color-label filter__font" for="Black"></label>
+ 
+                    <input class="filter__tags-color-input" type="checkbox" id="Blue">
+                    <label class="filter__tags-color-label filter__font" for="Blue"></label>
+    
+                    <input class="filter__tags-color-input" type="checkbox" id="Green">
+                    <label class="filter__tags-color-label filter__font" for="Green"></label>
+    
+                    <input class="filter__tags-color-input" type="checkbox" id="White">
+                    <label class="filter__tags-color-label filter__font" for="White"></label>
+                </fieldset> 
+            </div>
+            <div class="filter__views">
+                <p class="filter__title">Views</p>
+                <form class="filter__views-block">
+                    <ul class="filter__views-d">
+                        <li class="filter__views-item">
+                            <input class="filter__views-input" type="radio" id="500">
+                            <label class="filter__views-labe" for="500">100-500</label>
+                        </li>
+                        <li class="filter__views-item">
+                            <input class="filter__views-input" type="radio" id="1000">
+                            <label class="filter__views-labe" for="1000">500-1000</label>
+                        </li>
+                        <li class="filter__views-item">
+                            <input class="filter__views-input" type="radio" id="2000">
+                            <label class="filter__views-labe" for="2000">1000-2000</label>
+                        </li>
+                    </ul>
+                </form> 
+            </div>
+            <div class="filter__comments">
+                <p class="filter__title">Comments</p>
+                <form class="filter__comments-block">
+                    <ul class="filter__comments-color">
+                        <li class="filter__comments-item">
+                            <input class="filter__comments-input" type="checkbox" id="0">
+                            <label class="filter__comments-labe" for="0">0</label>
+                        </li>
+                        <li class="filter__comments-item">
+                            <input class="filter__comments-input" type="checkbox" id="1">
+                            <label class="filter__comments-labe" for="1">0-1</label>
+                        </li>
+                        <li class="filter__comments-item">
+                            <input class="filter__comments-input" type="checkbox" id="50">
+                            <label class="filter__comments-labe" for="50">1-50</label>
+                        </li>
+                    </ul>
+                </form> 
+            </div>
+            <div class="filter__show">
+                <p class="filter__title">How show?</p>
+                <form class="filter__show-block">
+                    <ul class="filter__show-color">
+                        <li class="filter__show-item">
+                            <input class="filter__show-input" type="radio" id="5">
+                            <label class="filter__show-labe" for="0">show 5</label>
+                        </li>
+                        <li class="filter__show-item">
+                            <input class="filter__show-input" type="radio" id="10">
+                            <label class="filter__show-labe" for="1">show 10</label>
+                        </li>
+                    </ul>
+                </form> 
+            </div>
+
+            <div class="filter__sort">
+                <p class="filter__title">Sort by</p>
+                <form class="filter__sort-block">
+                    <ul class="filter__sort-color">
+                        <li class="filter__sort-item">
+                            <input class="filter__sort-input" type="radio" id="data">
+                            <label class="filter__sort-labe" for="data">data</label>
+                        </li>
+                        <li class="filter__sort-item">
+                            <input class="filter__sort-input" type="radio" id="title">
+                            <label class="filter__sort-labe" for="title">title</label>
+                        </li>
+                        <li class="filter__sort-item">
+                            <input class="filter__sort-input" type="radio" id="views">
+                            <label class="filter__sort-labe" for="views">views</label>
+                        </li>
+                    </ul>
+                </form> 
+            </div>
+
+
+            <div class="filter__form">
+                <p>reset form</p>
+                <button>
+                    <a href="#">Reset</a>
+                </button>
+            </div>
+        </div>
+        <div>
+            <input type="text">
+            <button>
+                <a href="#">Search</a>
+            </button>
+        </div>
+        <section>
+            <img src="#" alt="mydog">
+            <section>
+                <div>
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div>
+                    <p>20.01.2020</p>
+                    <p>223 views</p>
+                    <p>97 comments</p>
+                </div>
+                <h3>This is my new dog.</h3>
+                <p>Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa.</p>
+                <a href="#">Go to this post</a>
+            </section>
+            <section>
+                <div>
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div>
+                    <p>17.01.2020</p>
+                    <p>12 views</p>
+                    <p>0 comments</p>
+                </div>
+                <h3>Why do roosters scream in the morning?</h3>
+                <p>Erat nunc parturient feugiat egestas adipiscing erat eu. Non neque mi volutpat et lectus.</p>
+                <a href="#">Go to this post</a>
+            </section>
+            <section>
+                <div>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>17.01.2020</p>
+                    <p>337 views</p>
+                    <p>48 comments</p>
+                </div>
+                <h3>Kangaroo. Start.</h3>
+                <p>At leo at nisl tortor egestas. Mauris luctus est luctus massa tellus erat gravida. Eget aenean eget diam habitant risus. Dapibus et, nec platea felis. Facilisi ut leo arcu, semper id pellentesque quisque ultrices etiam.</p>
+                <a href="#">Go to this post</a>
+            </section>
+            <section>
+                <div>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div>
+                    <p>15.01.2020</p>
+                    <p>222 views</p>
+                    <p>14 comments</p>
+                </div>
+                <h3>Met a duckling at the pond.</h3>
+                <p>Nulla tempus mauris sed vel bibendum. Felis urna suspendisse amet, laoreet sagittis. Semper pellentesque condimentum vitae morbi in dui. Et in et diam massa.</p>
+                <a href="#">Go to this post</a>
+            </section>
+            <section>
+                <div>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div>
+                    <p>20.01.2020</p>
+                    <p>122 views</p>
+                    <p>23 comments</p>
+                </div>
+                <h3>Can dogs also be friends?</h3>
+                <p>Eu, libero aliquet nibh turpis quis nulla et ullamcorper purus. Consequat egestas sed sagittis morbi lacus. Consectetur et justo, sagittis vitae mi faucibus urna, eu. </p>
+                <a href="#">Go to this post</a>
+            </section>
+            <div>
+        </section>
+        <div>
+            <a href="#">
+                <img src="" alt="">
+            </a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">
+                <img src="" alt="">
+            </a>
+        </div>
+        
+    </main>
+</body>
+</html>

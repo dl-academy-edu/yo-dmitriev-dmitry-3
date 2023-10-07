@@ -30,6 +30,10 @@ body {
   }
 }
 
-* {
-  outline: 1px solid lightgreen;
+h1, p {
+  @include Gilroy;
 }
+
+// * {
+//   outline: 1px solid lightgreen;
+// }
