@@ -34,6 +34,13 @@ h1, p {
   @include Gilroy;
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // * {
 //   outline: 1px solid lightgreen;
 // }
