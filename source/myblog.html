@@ -17,25 +17,39 @@
                 </div>
             </div>
 
-            <div class="filter__views">
-                <p class="filter__title">Views</p>
-                <form class="filter__views-block">
-                    <ul class="filter__views-d">
-                        <li class="filter__views-item">
-                            <input class="filter__views-input" type="radio" id="500">
-                            <label class="filter__views-labe" for="500">100-500</label>
-                        </li>
-                        <li class="filter__views-item">
-                            <input class="filter__views-input" type="radio" id="1000">
-                            <label class="filter__views-labe" for="1000">500-1000</label>
-                        </li>
-                        <li class="filter__views-item">
-                            <input class="filter__views-input" type="radio" id="2000">
-                            <label class="filter__views-labe" for="2000">1000-2000</label>
-                        </li>
-                    </ul>
-                </form> 
-            </div>
+            <fieldset class="filter__views">
+                <label class="check option">
+                    <p class="filter__title">Views</p>
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                            <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    100-500
+                </label>
+                <label class="check option">
+                    <input class="check__radio" type="radio" checked>
+                    <span class="check__views" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                        <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    500-1000
+                </label>
+                <label class="check option">
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                        <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    1000-2000
+                </label>
+            </fieldset>
             <div class="filter__comments">
                 <p class="filter__title">Comments</p>
                 <form class="filter__comments-block">
@@ -57,44 +71,67 @@
             </div>
             <div class="filter__show">
                 <p class="filter__title">How show?</p>
-                <form class="filter__show-block">
-                    <ul class="filter__show-color">
-                        <li class="filter__show-item">
-                            <input class="filter__show-input" type="radio" id="5">
-                            <label class="filter__show-labe" for="0">show 5</label>
-                        </li>
-                        <li class="filter__show-item">
-                            <input class="filter__show-input" type="radio" id="10">
-                            <label class="filter__show-labe" for="1">show 10</label>
-                        </li>
-                    </ul>
-                </form> 
+                <label class="check option">
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                            <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    show 5
+                </label>
+                <label class="check option">
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                            <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    show 10
+                </label>
+
             </div>
 
             <div class="filter__sort">
                 <p class="filter__title">Sort by</p>
-                <form class="filter__sort-block">
-                    <ul class="filter__sort-color">
-                        <li class="filter__sort-item">
-                            <input class="filter__sort-input" type="radio" id="data">
-                            <label class="filter__sort-labe" for="data">data</label>
-                        </li>
-                        <li class="filter__sort-item">
-                            <input class="filter__sort-input" type="radio" id="title">
-                            <label class="filter__sort-labe" for="title">title</label>
-                        </li>
-                        <li class="filter__sort-item">
-                            <input class="filter__sort-input" type="radio" id="views">
-                            <label class="filter__sort-labe" for="views">views</label>
-                        </li>
-                    </ul>
-                </form> 
+                <label class="check option">
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                            <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    data
+                </label>
+                <label class="check option">
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                            <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    title
+                </label>
+                <label class="check option">
+                    <input class="check__radio" type="radio">
+                    <span class="check__views">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <rect x="6" y="6" width="13" height="13" rx="6.5" fill="#E5E5E5"/>
+                            <rect x="1.25" y="1.25" width="22.5" height="22.5" rx="11.25" stroke="#E5E5E5" stroke-width="2.5"/>
+                        </svg>
+                    </span>
+                    views
+                </label>
             </div>
 
 
             <div class="filter__form">
                 <p>reset form</p>
-                <button>
+                <button class="reset">
                     <a href="#">Reset</a>
                 </button>
             </div>

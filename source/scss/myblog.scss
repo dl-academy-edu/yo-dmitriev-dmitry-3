@@ -21,7 +21,7 @@
         display: block;
         position: relative;
         margin-right: 77px;
-        width: 115px;
+        width: 109px;
         &-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -96,16 +96,40 @@
 .filter__views {
     display: block;
     position: relative;
-    margin-right: 70px;
-    &-item {
-        margin-top: 10px;
-        list-style-type: none;
-    }
-    &-input {
-        width: 22.5px;
-        height: 22.5px;
-    }
+    border: 0;
 }
+
+.option {
+    display: block;
+    margin-bottom: 12px;
+    margin-right: 70px;
+  }
+  .check {
+    padding-left: 0px;    
+  }
+  .check__radio {
+    position: absolute;
+    appearance:none;
+  }
+  .check__views {
+    position: absolute;
+    margin-left: -35px;
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 30px;
+    border: 0px solid #2f35df;
+  }
+
+//   *checked
+  .check__radio:checked + .check__views {
+    background-image: url(../img/onradio.svg);
+  }
+  .check__radio:focus + .check__views {
+    background-image: url(../img/radio.svg);
+  }
+  .check__radio:checked:focus + .check__views {
+    background-image: url(../img/radio.svg);
+  }
 
 .filter__comments {
     display: block;
@@ -125,26 +149,11 @@
     display: block;
     position: relative;
     margin-right: 76px;
-    &-item {
-        margin-top: 10px;
-        list-style-type: none;
-    }
-    &-input {
-        width: 22.5px;
-        height: 22.5px;
-    }
 }
 
 .filter__sort {
     display: block;
     position: relative;
     margin-right: 48px;
-    &-item {
-        margin-top: 10px;
-        list-style-type: none;
-    }
-    &-input {
-        width: 22.5px;
-        height: 22.5px;
-    }
 }
+
