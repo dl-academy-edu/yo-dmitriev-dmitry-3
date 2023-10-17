@@ -13,16 +13,15 @@
 @import "_base";
 @import "_fonts";
 @import "myblog";
-
+// @import "popup";
 /*
   Import all other blocks
 */
 @import "_blocks/container";
 @import "_blocks/footer";
 @import "_blocks/header";
-
 @import "_blocks/breadcrumb__item";
-
+// @import "_blocks/popup";
 
 .name {
   @include Gilroy;
