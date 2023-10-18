@@ -13,7 +13,7 @@
     }
 }
 
-.contact {
+.message {
     display: none;
     position: relative;
     top: 14%;
@@ -21,20 +21,23 @@
     width: 1440px;
     height: 768px;
     flex-shrink: 0;
-    padding: 118px, 380px, 117px;
+    padding: 113px, 393px, 115px, 367px;
     background: var(--wild-sand-opacity, rgba(246, 246, 246, 0.99));
     z-index: 5;
     &__open {
         display: block;
     }
     &__form {
-
-        margin: 118px auto;
+        margin: 113px auto;
         width: 680px;
-        height: 533px;
+        height: 540px;
         border: 2.5px solid var(--Black, #070707);
         background: var(--White, #FFF);
         padding: 40px;
+        &-one{
+            display: flex;
+            margin-bottom: 20px;
+        }
     }
     &__overflow {
         position: fixed;
@@ -47,30 +50,13 @@
         z-index: 2;
     }
 
-    &__form-one{
-        margin-bottom: 20px;
-        :hover {
-            cursor: pointer;
-        }
-    }
-    &__input {
-        position: relative;
-        width: 600px;
-        height: 50px;
-        flex-shrink: 0;
-        border: 2.5px solid var(--Mercury, #E5E5E5);
-    }
-    &__form-two {
-        display: flex;
-        margin-bottom: 20px;
-        :hover {
-            cursor: pointer;
-        }
-    }
-    &__label-two {
+    &__label-one {
         margin-right: 20px;
+        :hover {
+            cursor: pointer;
+        } 
     }
-    &__two-input {
+    &__one-input {
         position: relative;
         width: 290px;
         height: 50px;
@@ -80,17 +66,22 @@
             cursor: pointer;
         }
     }
+    &__area {
+        border: 2.5px solid var(--Mercury, #E5E5E5);
+    }
 
     &__fieldset {
         display: flex;
         border: none;
         margin-top: 20px;
         padding: 0;
+        :hover {
+            cursor: pointer;
+        } 
         &-input {
             width: 19px;
             height: 19px;
             flex-shrink: 0;
-            cursor: pointer;
         }
         &-text {
             @include Gilroy;
@@ -135,6 +126,7 @@
             :hover {
                 cursor: pointer;
             }
+            
         }
     }
 }

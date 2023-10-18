@@ -21,7 +21,9 @@
 @import "_blocks/footer";
 @import "_blocks/header";
 @import "_blocks/breadcrumb__item";
-// @import "_blocks/popup";
+@import "_blocks/popup";
+@import "_blocks/popupsign";
+@import "_blocks/popupmessage";
 
 .name {
   @include Gilroy;
@@ -177,8 +179,8 @@
     }
     &-text {
       position: absolute;
-      width: 448px;
-      height: 85px;
+      // width: 448px;
+      // height: 85px;
       text-align: start;
       margin-left: -465px;
       margin-top: 16px;

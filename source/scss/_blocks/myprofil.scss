@@ -1,0 +1,20 @@
+.text__profil {
+    @include Gilroy;
+    color: var(--Black, #070707);
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0;
+}
+
+.profil {
+    display: flex;
+    &__foto {
+        margin-right: 105px;
+        &-img {
+            max-width: 320px;
+            height: 450px;
+        }
+    }
+}

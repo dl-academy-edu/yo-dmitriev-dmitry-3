@@ -13,7 +13,7 @@
     }
 }
 
-.contact {
+.sign {
     display: none;
     position: relative;
     top: 14%;
@@ -21,17 +21,16 @@
     width: 1440px;
     height: 768px;
     flex-shrink: 0;
-    padding: 118px, 380px, 117px;
+    padding: 225px, 535px;
     background: var(--wild-sand-opacity, rgba(246, 246, 246, 0.99));
     z-index: 5;
     &__open {
         display: block;
     }
     &__form {
-
-        margin: 118px auto;
-        width: 680px;
-        height: 533px;
+        margin: 225px auto;
+        width: 370px;
+        height: 318px;
         border: 2.5px solid var(--Black, #070707);
         background: var(--White, #FFF);
         padding: 40px;
@@ -47,30 +46,14 @@
         z-index: 2;
     }
 
-    &__form-one{
+    &__label-one{
         margin-bottom: 20px;
         :hover {
             cursor: pointer;
-        }
+        } 
     }
-    &__input {
-        position: relative;
-        width: 600px;
-        height: 50px;
-        flex-shrink: 0;
-        border: 2.5px solid var(--Mercury, #E5E5E5);
-    }
-    &__form-two {
-        display: flex;
-        margin-bottom: 20px;
-        :hover {
-            cursor: pointer;
-        }
-    }
-    &__label-two {
-        margin-right: 20px;
-    }
-    &__two-input {
+
+    &__one-input {
         position: relative;
         width: 290px;
         height: 50px;
@@ -81,30 +64,9 @@
         }
     }
 
-    &__fieldset {
-        display: flex;
-        border: none;
-        margin-top: 20px;
-        padding: 0;
-        &-input {
-            width: 19px;
-            height: 19px;
-            flex-shrink: 0;
-            cursor: pointer;
-        }
-        &-text {
-            @include Gilroy;
-            margin-left: 15px;
-            color: var(--Mercury, #E5E5E5);
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-size: 14px;
-            font-weight: 500;
-
-        }
-    }
-    &__sign-btn {
+    &__log-btn {
         @include Gilroy;
-        color: var(--Mercury, #E5E5E5);
+        color: var(--Black, #070707);
         background-color: #FFF;
         text-align: center;
         font-size: 18px;
@@ -114,27 +76,28 @@
         align-items: center;
         gap: 10px;
         border-radius: 30px;
-        border: 2.5px solid var(--Mercury, #E5E5E5);
-        margin-top: 20px;
+        border: 2.5px solid var(--Black, #070707);
+        margin-top: 10px;
         :hover {
             cursor: pointer;
-        }
+        } 
     }
+
     &__close {
         position: absolute;
-        top: 118px;
-        right: 344px;
+        top: 225px;
+        right: 499.5px;
         width: 25.5px;
         height: 25.5px;
         border: none;
         cursor: pointer;
+        :hover {
+            cursor: pointer;
+        } 
         &-img {
             color: #828282;
             margin: -30px;
             font-size: 45px;
-            :hover {
-                cursor: pointer;
-            }
         }
     }
 }

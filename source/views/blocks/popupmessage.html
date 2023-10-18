@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="message">
+        <div class="message__overflow">
+            <form class="message__form" action="#" method="post">
+                <div class="message__form-one">
+                    <div class="message__label-one">
+                        <label class="message__one" for="Name">
+                            <div class="p">
+                                <p class="p__text">What is your name?</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="message__one-input" type="text" id="Name">
+                        </label>
+                    </div>
+                    <div class="message__label-one">
+                        <label class="message__one" for="Message">
+                            <div class="p">
+                                <p class="p__text">Message subject</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="message__one-input" type="text" id="Message">
+                        </label>
+                    </div>
+                </div>
+                <div class="message__form-one">
+                    <div class="message__label-one">
+                        <label class="message__one" for="Email">
+                            <div class="p">
+                                <p class="p__text">Your Email</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="message__one-input" type="Email" id="Email">
+                        </label>
+                    </div>
+                    <div class="message__label-one">
+                        <label class="message__one" for="Phone">
+                            <div class="p">
+                                <p class="p__text">Your mobile phone</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="message__one-input" type="phone" id="Phone" >
+                        </label>
+                    </div>
+                </div>
+                <div class="message__label-two">
+                    <p class="p p__text">What do you want to discuss with me?</p>
+                    <textarea class="message__area" id="textarea" cols="77" rows="8"></textarea>
+                </div>
+                <fieldset class="message__fieldset" >
+                    <label class="message__fieldset-label" for="consent"></label>
+                        <input class="message__fieldset-input" type="checkbox">
+                        <p class="message__fieldset-text" >Clicking on the button, you consent to the processing of your personal data.</p> 
+                </fieldset>
+                <button class="message__sign-btn" >Send</button>
+            </form>
+            <button class="message__close" type="button" >
+                <p class="message__close-img" >x</p>            
+            </button>
+        </div>
+    </div>
+</body>
+</html>

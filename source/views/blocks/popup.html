@@ -6,58 +6,92 @@
     <title>Popup</title>
 </head>
 <body>
-    <section class="contact"> 
-        <form class="contact__form" action="#" method="post">
-            <div class="contact__form-wrapper">
-                <div class="contact__label-wrapper">
-                    <label class="contact__label" for="Email">
-                        <p>Email</p>
-                        <input class="contact__input" type="email" id="Email" placeholder="Ivanov@mail.ru">
-                    </label>
-                </div>
-            </div>
-
-            <div class="contact__two-input">
-                <div class="contact__label-wrapper">
-                    <label class="contact__label" for="Name">  
-                        <p>Name</p>
-                        <input class="contact__input" type="text" id="Name" placeholder="Ivan Ivanov">
-                    </label>
-                </div>
-                <div class="contact__label-wrapper">
-                    <label class="contact__label" for="Sumame">
-                        <p>Sumame </p>
-                        <input class="contact__input" type="text" id="Sumame" >
-                    </label>
-                </div>
-            </div>
-
-
-
-                <div class="contact__two-input">
-                    <div class="contact__label-wrapper">
-                        <label class="contact__label" for="Password">Password
-                        <input class="contact__input" type="text" id="Password" ></label>
-                    </div>
-                    <div class="contact__label-wrapper">
-                        <label class="contact__label" for="Repeat">Repeat password
-                        <input class="contact__input" type="text" id="Repeat" ></label>
+    <div class="contact">
+        <div class="contact__overflow">
+            <form class="contact__form" action="#" method="post">
+                <div class="contact__form-one">
+                    <div class="contact__label-one">
+                        <label class="contact__one" for="Email">
+                            <div class="p">
+                                <p class="p__text">Email</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__input" type="email" id="Email" placeholder="Ivanov@mail.ru">
+                        </label>
                     </div>
                 </div>
-
-                <div class="contact__two-input">
-                    <div class="contact__label-wrapper">
-                        <label class="contact__label" for="Location">Location
-                        <input class="contact__input" type="text" id="Location" ></label>
+    
+                <div class="contact__form-two">
+                    <div class="contact__label-two">
+                        <label class="contact__two" for="Name">
+                            <div class="p">
+                                <p class="p__text">Name</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__two-input" type="text" id="Name" placeholder="Ivan">
+                        </label>
                     </div>
-                    <div class="contact__label-wrapper">
-                        <label class="contact__label" for="Age">Age</label>
-                        <input class="contact__input" type="text" id="Age" >
+                    <div class="contact__label-two">
+                        <label class="contact__two" for="Surname">
+                            <div class="p">
+                                <p class="p__text">Surname</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__two-input" type="text" id="Surname" placeholder="Ivanov" >
+                        </label>
                     </div>
                 </div>
-
-            </div>
-        </form>
-    </section>
+                <div class="contact__form-two">
+                    <div class="contact__label-two">
+                        <label class="contact__two" for="Password">
+                            <div class="p">
+                                <p class="p__text">Password</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__two-input" type="password" id="Password">
+                        </label>
+                    </div>
+                    <div class="contact__label-two">
+                        <label class="contact__two" for="Repeat">
+                            <div class="p">
+                                <p class="p__text">Repead password</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__two-input" type="password" id="Repeat" >
+                        </label>
+                    </div>
+                </div>
+                <div class="contact__form-two">
+                    <div class="contact__label-two">
+                        <label class="contact__two" for="Location">
+                            <div class="p">
+                                <p class="p__text">Location</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__two-input" type="text" id="Location">
+                        </label>
+                    </div>
+                    <div class="contact__label-two">
+                        <label class="contact__two" for="Age">
+                            <div class="p">
+                                <p class="p__text">Age</p>
+                                <p class="p__star">*</p>
+                            </div>
+                            <input class="contact__two-input" type="number" id="Age" >
+                        </label>
+                    </div>
+                </div>
+                <fieldset class="contact__fieldset" >
+                    <label class="contact__fieldset-label" for="consent"></label>
+                        <input class="contact__fieldset-input" type="checkbox">
+                        <p class="contact__fieldset-text" >Clicking on the button, you consent to the processing of your personal data.</p> 
+                </fieldset>
+                <button class="contact__sign-btn" >Sign up</button>
+            </form>
+            <button class="contact__close" type="button" >
+                <p class="contact__close-img" >x</p>            
+            </button>
+        </div>
+    </div>
 </body>
 </html>
